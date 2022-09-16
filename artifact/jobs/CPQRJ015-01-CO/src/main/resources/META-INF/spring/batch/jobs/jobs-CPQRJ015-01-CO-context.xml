@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans" xmlns="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch.xsd">
+  <job id="CPQRJ015-01-CO" incrementer="defaultIncrementer" job-repository="jobRepository">
+  	<description>Apx Jobs prueba</description>
+    <listeners>
+      <listener ref="interceptorJobExecutionListener"/>
+    </listeners>
+
+    <step id="WriteEjercicio" parent="step_1"/>
+
+  </job>
+
+  <step id="step_1">
+    <tasklet ref="Write"/>
+    <listeners>
+      <listener ref="interceptorJobExecutionListener"/>
+    </listeners>
+  </step>
+
+</beans:beans>

@@ -1,0 +1,12 @@
+{
+    "component": "r2artifact",
+    "repoName": "apx-batch-copqrsmartsv-job-3",
+    "uuaa": "cpqr",
+    "slave_label": "apx",
+    "extra_properties": null,
+    "apxrepoBranch": "master",
+    "componentPaaSId": "apx-batch-copqrsmartsv-job-3",
+    "appPaaSId": "cpqr",
+    "proyectPaaSId": "co.cpqr.app-id-42498.dsg",
+    "resource_type": "du_batch"
+}
